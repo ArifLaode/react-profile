@@ -29,6 +29,7 @@ export const SectionContent: React.FC<SectionContentProps> = ({
 type SectionProps = {
   title?: string;
   columns?: number;
+  id?: string;
   children: React.ReactNode;
   className?: string;          
   titleClassName?: string;
@@ -38,6 +39,7 @@ type SectionProps = {
 const Section: React.FC<SectionProps> = ({
   title,
   columns = 12,
+  id,
   children,
   className = "",
   titleClassName = "",
@@ -47,12 +49,13 @@ const Section: React.FC<SectionProps> = ({
     <section
       // taruh className paling depan biar bisa override default
       className={`section ${className} bg-white p-8 box-border`}
-    >
-      {title && (
+      id={id}
+        >
+      {title ? (
         <h2 className={`section-title mb-4 ${titleClassName}`}>
           {title}
         </h2>
-      )}
+      ) : null}
 
       <div
         className={`section-container grid gap-4 ${containerClassName}`}

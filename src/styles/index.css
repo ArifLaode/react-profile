@@ -29,7 +29,6 @@ body {
 
 .section {
   margin-bottom: 2vh;
-  padding: 2vh;
   background-color: #FFFFFF; /* Tailwind bg-white */
   border-radius: 0.5rem; /* Tailwind rounded-lg */
   margin-left: auto;
@@ -45,20 +44,6 @@ body {
   align-items: center;
   text-align: center;
   color: #1F2937; /* Tailwind text-gray-800 */
-}
-
-.section-box {
-  border: 1px solid #E5E7EB; /* Tailwind border-gray-200 */
-  border-radius: 0.5rem; /* Tailwind rounded-lg */
-  padding: 1.5rem; /* Tailwind p-6 */
-  background-color: #F9FAFB; /* Tailwind bg-gray-50 */
-}
-
-.sambutan-image {
-  width: 20%;
-  height: auto;
-  border-radius: 0.5rem; /* Tailwind rounded-lg */
-  margin-bottom: 1.5rem; /* Tailwind mb-6 */
 }
 
 .sambutan p {
