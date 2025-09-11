@@ -29,6 +29,7 @@ body {
 
 .section {
   margin-bottom: 2vh;
+  padding: 10vh;
   background-color: #FFFFFF; /* Tailwind bg-white */
   border-radius: 0.5rem; /* Tailwind rounded-lg */
   margin-left: auto;

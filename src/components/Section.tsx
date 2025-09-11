@@ -46,26 +46,27 @@ const Section: React.FC<SectionProps> = ({
   containerClassName = "",
 }) => {
   return (
-    <section
-      // taruh className paling depan biar bisa override default
-      className={`section ${className} bg-white p-8 box-border`}
-      id={id}
+    <div className="px-6">
+      <section
+        // taruh className paling depan biar bisa override default
+        className={`section ${className}`}
+        id={id}
+          >
+        {title ? (
+          <h2 className={`section-title mb-4 ${titleClassName}`}>
+            {title}
+          </h2>
+        ) : null}
+        <div
+          className={`section-container grid gap-4 ${containerClassName}`}
+          style={{
+            gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
+          }}
         >
-      {title ? (
-        <h2 className={`section-title mb-4 ${titleClassName}`}>
-          {title}
-        </h2>
-      ) : null}
-
-      <div
-        className={`section-container grid gap-4 ${containerClassName}`}
-        style={{
-          gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`,
-        }}
-      >
-        {children}
-      </div>
-    </section>
+          {children}
+        </div>
+      </section>
+    </div>
   );
 };
 
