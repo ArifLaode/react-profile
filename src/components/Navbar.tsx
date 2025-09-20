@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import logo from '../assets/logo.png';
 
 function Navbar() {
   const location = useLocation();
@@ -53,7 +54,7 @@ function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Kiri */}
           <div className="flex items-center">
-            <img src="/logo.png" alt="Logo" className="h-12 w-12 mr-3" />
+            <img src={logo} alt="Logo" className="h-12 w-12 mr-3" />
             {!isOnSlider && (
               <>
                 <span className="text-lg font-semibold text-gray-800 mr-30">

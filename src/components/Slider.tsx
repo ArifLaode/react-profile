@@ -52,7 +52,14 @@ function Slider() {
           studi hidrologi lainnya.
         </p>
         <a
-          href="#sambutan"
+          href="/#sambutan"
+          onClick={(e) => {
+            e.preventDefault();
+            const el = document.getElementById("sambutan");
+            if (el) {
+              el.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
           className="px-6 py-3 bg-green-600 hover:bg-green-700 rounded-full text-lg font-semibold transition duration-500 ease-linear shadow-lg"
         >
           Mulai
