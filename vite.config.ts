@@ -8,7 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    Sitemap({ hostname: 'ulunggolaka.icu',
+    Sitemap({ hostname: 'https://ulunggolaka.icu',
       generateRobotsTxt: true,
       externalSitemaps: ['https://ulunggolaka.icu/sitemap.xml'],
       changefreq: 'weekly',
