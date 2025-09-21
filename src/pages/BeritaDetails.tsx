@@ -5,7 +5,7 @@ function BeritaDetail() {
   const { id } = useParams<{ id: string }>();
 
   return (
-    <Section title="Detail Berita" id="berita-detail">
+    <Section title="Detail Berita" metaTitle="Berita Sejarah Kelurahan Ulunggolaka" metaDescription="Berita sejarah kelurahan Ulunggolaka dari sejarah perpindahan warga hingga sekarang..." id="berita-detail">
       <SectionContent col={12} className="p-6 bg-white rounded-xl shadow-md space-y-4 text-gray-700 leading-relaxed">
         {id === "sejarah" && (
           <>

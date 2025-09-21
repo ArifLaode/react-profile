@@ -6,7 +6,7 @@ function Layanan() {
   return (
     <div>
       {/* Informasi Layanan Offline */}
-      <Section title="Pelayanan Offline" id="layanan" className="mt-20" titleClassName="text-4xl font-bold text-grey-200 mb-20 align-center text-center" columns={12}>
+      <Section title="Pelayanan Offline" id="layanan" metaTitle="Layanan Kelurahan Ulunggolaka" metaDescription="Layanan Kelurahan Ulunggolaka dapat diakses melalui ......." className="mt-20" titleClassName="text-4xl font-bold text-grey-200 mb-20 align-center text-center" columns={12}>
         <SectionContent col={6} className="p-6 space-y-4">
           <h3 className="text-2xl font-bold text-green-700 flex items-center space-x-2">
             <Clock className="w-6 h-6 text-green-600" />

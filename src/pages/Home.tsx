@@ -9,6 +9,16 @@ const HomePage = () => {
   return (
     <>
     <Slider />
+    <Section metaTitle="Profil Kelurahan Ulunggolaka" metaDescription="Selamat datang di situs resmi Kelurahan Ulunggolaka! Kami berkomitmen untuk memberikan pelayanan terbaik bagi masyarakat dan memajukan komunitas kita bersama. Jelajahi berbagai informasi penting, layanan publik, dan berita terkini seputar kelurahan kami. Bersama-sama, mari kita wujudkan Ulunggolaka yang lebih baik dan sejahtera.">
+      <SectionContent col={12} className="hidden p-6 bg-white rounded-xl shadow-md mb-6">
+        <h3 className="text-2xl font-bold text-green-700">Profil Kelurahan Ulunggolaka</h3>
+        <p className="text-gray-700 mb-4">
+          Kelurahan Ulunggolaka adalah sebuah wilayah administratif yang terletak di Kecamatan
+          Watubangga, Kabupaten Kolaka, Sulawesi Tenggara, Indonesia. Kelurahan ini dikenal
+          dengan keindahan alamnya yang memukau, termasuk pantai-pantai yang menawan dan
+          </p>
+        </SectionContent>
+    </Section>
     <Section
       title="Sambutan"
       id="sambutan"

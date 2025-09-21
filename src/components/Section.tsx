@@ -1,10 +1,11 @@
 import React from "react";
+import { Helmet } from "react-helmet-async"; // ganti react-helmet kalau pakai async
 
 type SectionContentProps = {
   children: React.ReactNode;
-  col?: number; // span kolom
-  row?: number; // baris opsional
-  className?: string; // untuk Tailwind
+  col?: number;
+  row?: number;
+  className?: string;
 };
 
 export const SectionContent: React.FC<SectionContentProps> = ({
@@ -28,16 +29,20 @@ export const SectionContent: React.FC<SectionContentProps> = ({
 
 type SectionProps = {
   title?: string;
+  metaTitle?: string;        // 👈 tambahkan untuk SEO title
+  metaDescription?: string;  // 👈 tambahkan untuk SEO description
   columns?: number;
   id?: string;
   children: React.ReactNode;
-  className?: string;          
+  className?: string;
   titleClassName?: string;
-  containerClassName?: string; 
+  containerClassName?: string;
 };
 
 const Section: React.FC<SectionProps> = ({
   title,
+  metaTitle,
+  metaDescription,
   columns = 12,
   id,
   children,
@@ -47,11 +52,19 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <div className="px-6">
+      {metaTitle || metaDescription ? (
+        <Helmet>
+          {metaTitle && <title>{metaTitle}</title>}
+          {metaDescription && (
+            <meta name="description" content={metaDescription} />
+          )}
+        </Helmet>
+      ) : null}
+
       <section
-        // taruh className paling depan biar bisa override default
         className={`section ${className}`}
         id={id}
-          >
+      >
         {title ? (
           <h2 className={`section-title mb-4 ${titleClassName}`}>
             {title}

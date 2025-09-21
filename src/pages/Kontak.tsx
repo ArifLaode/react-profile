@@ -2,7 +2,7 @@ import Section, { SectionContent } from "../components/Section";
 
 function Kontak() {
   return (
-    <Section title="Kontak & Informasi" className="m-20" id="kontak" columns={12}>
+    <Section title="Kontak & Informasi" metaTitle="Kontak di Kelurahan Ulunggolaka" metaDescription="Kontak yang dapat dihubungi" className="m-20" id="kontak" columns={12}>
       {/* Informasi Umum */}
       <SectionContent col={6} className="p-6 bg-white rounded-xl shadow-md">
         <h3 className="text-xl font-bold text-green-700 mb-4">Pelayanan Offline</h3>

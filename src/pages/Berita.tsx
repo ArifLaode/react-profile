@@ -21,7 +21,7 @@ const beritaList = [
 
 function Berita() {
   return (
-    <Section title="Berita Kelurahan Ulunggolaka" id="berita" className="mt-20 h-[90vh]" titleClassName="text-4xl font-bold text-grey-200 mb-20 align-center text-center" columns={12}>
+    <Section title="Berita Kelurahan Ulunggolaka" metaTitle="Berita Kelurahan Ulunggolaka" metaDescription="Dapatkan berita terbaru seputar kelurahan ulunggolaka yang update dan terbarukan" id="berita" className="mt-20 h-[90vh]" titleClassName="text-4xl font-bold text-grey-200 mb-20 align-center text-center" columns={12}>
       {beritaList.map((item) => (
         <SectionContent
           key={item.id}
