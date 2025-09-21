@@ -14,11 +14,11 @@ export default defineConfig({
       changefreq: 'weekly',
       priority: 0.8,
       dynamicRoutes: [
-        "/",          // Home
-        "/profil",    // Profil
-        "/layanan",   // Layanan
-        "/berita",    // List berita
-        "/kontak"     // Kontak
+        "/#/",          // Home
+        "/#/profil",    // Profil
+        "/#/layanan",   // Layanan
+        "/#/berita",    // List berita
+        "/#/kontak"     // Kontak
       ]
      }),
   ],
