@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Google Sans';
-  src: url(/fonts/GoogleSans-Regular.ttf) format('truetype');
+  src: url(../assets/font/GoogleSans-Regular.ttf) format('truetype');
 }
 
 :root {
