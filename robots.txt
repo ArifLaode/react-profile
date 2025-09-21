@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://ulunggolaka.icu/sitemap.xml
+Sitemap: https://ulunggolaka.icu/sitemap.xml
