@@ -9,7 +9,6 @@ export default defineConfig({
     react(),
     tailwindcss(),
     Sitemap({ hostname: 'https://ulunggolaka.icu',
-      generateRobotsTxt: true,
       externalSitemaps: ['https://ulunggolaka.icu/sitemap.xml'],
       changefreq: 'weekly',
       priority: 0.8,
